@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contacto</title>
+	<link rel="stylesheet" type="text/css" href="css/CafeClub.css">
+</head>
+	<body>
+		<h1><img src="img/grano.gif"> Contacto</h1>
+		<hr>
+
+		<p>Si deseas ponerte en contacto con nosotros rellena este formulario y te constestaremos con la mayor brevedad posible.
+		Los campos como nombre, apellidos, correo electrónico y edad son obligatorios.</p>
+
+		<form action="index.html" method="post">
+
+		<h2>Nombre:<input class="nom" type="text" size="10" maxlength="15"></h2>
+		<h2>Apellidos:<input class="ape" type="text" size="40" maxlength="30"></h2>
+		<h2>Correo:<input class="correo" type="email" size="40" maxlength="30"></h2>
+		<h2>Edad:<input class="edad" type="number" size="10" min="18" max="99"></h2>
+
+		<h2>¿Cuantas tazas de café tomas al día?</h2>
+
+	  	<input type="radio" name="pocas" value="pocas" checked>
+	  	<label for="pocas">1 o 2 tazas</label>
+	
+
+
+	  	<input type="radio" name="bastantes" value="bastantes">
+	  	<label for="bastantes">2 - 5 tazas</label>
+
+
+
+	  	<input type="radio" name="muchas" value="muchas">
+	  	<label for="muchas">Más de 5 tazas</label>
+	
+		<h2>¿Cómo te gusta preparar el café?</h2>
+
+		<label for="formas">Elige uno:</label>
+
+		<select class="varios" name="formas">
+		  <option value="Espresso">Espresso</option>
+		  <option value="Cortado">Cortado</option>
+		  <option value="Cappucino">Cappucino</option>
+		  <option value="CaféLeche">Café con leche</option>
+		</select>
+
+		<h2>¿Cual te gusta más?</h2>
+
+		<label for="tipos">Elige uno:</label>
+
+		<select name="tipos">
+		  <option value="Lavado">Lavado</option>
+		  <option value="NoLavado">No Lavado</option>
+		  <option value="Robusta">Robusta</option>
+		  <option value="Caracolillo">Caracolillo</option>
+		</select>
+
+		<h2>¿Como nos has encontrado?</h2>
+
+		<label for="lista">Elige uno:</label>
+
+		<input list="sugerencias" name="lista">
+		<datalist id="sugerencias">
+    		<option value="Anuncio de Televisión"></option>
+		    <option value="Buscadores"></option>
+		    <option value="Amigos/as"></option>
+  		</datalist>
+
+  		<h2>¿Como te gusta el café de caliente?</h2>
+
+
+		(Frío)<input type="range" list="temperatura">(Caliente)
+
+		<datalist id="temperatura">
+		  <option value="0"></option>
+		  <option value="10"></option>
+		  <option value="20"></option>
+		  <option value="30"></option>
+		  <option value="40"></option>
+		  <option value="50"></option>
+		  <option value="60"></option>
+		  <option value="70"></option>
+		  <option value="80"></option>
+		  <option value="90"></option>
+		  <option value="100"></option>
+		</datalist>
+  
+  		<h2>Seleccione una fecha: <input type="date"></h2>
+  		
+  		<h2>¿Desea introducir algún comentario?</h2>
+
+  		<textarea name="comentario" rows="10" cols="40"></textarea>
+
+		<center>
+		<form action="index.html">
+			<input class="espaciado" type="submit" value="Enviar">
+			<input type="submit" value="Volver" />
+			<input class="espaciado" type="reset" value="Borrar" />
+		</form>
+		</center>
+
+  		</form>
+	</body>
+</html>
