@@ -1,4 +1,4 @@
-# PrimeraWeb.github.io
+# PrimeraWeb
 
 1. En primer lugar en la carpeta **css** se encuentran los estilos los cuales emplearán los documentos.
  
